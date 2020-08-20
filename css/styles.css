@@ -123,10 +123,10 @@ nav .list {
   justify-content: space-between;
 
   align-items: center;
-  width: 206px;
+  /* width: 206px; */
 }
 
-.list-socialnetwork a {
+/* .list-socialnetwork a {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -134,12 +134,12 @@ nav .list {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
+} */
 
-.list-socialnetworks a:hover,
+/* .list-socialnetworks a:hover,
 .list-socialnetworks a:focus {
   background-color: var(--secondary-link-color);
-}
+} */
 
 .auth-nav .item svg:first-child {
   width: 10px;
@@ -152,14 +152,14 @@ nav .list {
   margin-right: 10px;
 }
 
-.header-icon {
+/* .header-icon {
   fill: var(--primaty-text-color);
 }
 
 .header-icon:hover,
 .header-icon:focus {
   fill: var(--secondary-link-color);
-}
+} */
 
 .list-socialnetworks .item:not(:last-child) {
   margin-right: 10px;
@@ -232,6 +232,13 @@ nav .list {
   color: var(--secondary-link-color);
 }
 
+.auth-nav .link:hover svg,
+.auth-nav .link:focus svg,
+.auth-nav .link.current {
+  /* color: var(--secondary-link-color); */
+  fill: var(--secondary-link-color);
+}
+
 /* Герой */
 .hero {
   /* max-width: 1600px; */
@@ -293,10 +300,6 @@ nav .list {
 }
 
 /* Наши плюсы */
-.weprossection {
-  padding-bottom: 0;
-}
-
 .container .benefits {
   display: flex;
   flex-wrap: wrap;
@@ -314,6 +317,7 @@ nav .list {
 .benefits-list-item-first::before {
   display: block;
   content: "";
+  margin-bottom: 30px;
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
@@ -326,6 +330,7 @@ nav .list {
 .benefits-list-item-secondary::before {
   display: block;
   content: "";
+  margin-bottom: 30px;
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
@@ -337,6 +342,7 @@ nav .list {
 .benefits-list-item-third::before {
   display: block;
   content: "";
+  margin-bottom: 30px;
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
@@ -348,6 +354,7 @@ nav .list {
 .benefits-list-item-fourth::before {
   display: block;
   content: "";
+  margin-bottom: 30px;
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
@@ -420,9 +427,9 @@ nav .list {
     0px 1px 1px var(--box-shadow-secondary), 0px 2px 1px var(--box-shadow-third);
   border-radius: 0px 0px 4px 4px;
 }
-.ourteam .item {
+/* .ourteam .item {
   background-color: var(--primary-background-color);
-}
+} */
 
 .ourteam-container .item:not(:last-child) {
   margin-right: 30px;
@@ -462,10 +469,31 @@ nav .list {
   height: 20px;
 }
 
-.ourteam-icon:hover,
+.ourteam-container a {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-background-color);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.ourteam-container a:hover,
+.ourteam-container a:focus {
+  background-color: var(--bg-button-color);
+}
+
+.ourteam-container a:hover svg,
+.ourteam-container a:focus svg {
+  fill: var(--prime-icon-bgc);
+}
+
+/* .ourteam-icon:hover,
 .ourteam-icon:focus {
   fill: var(--secondary-title-color);
-}
+} */
 
 /* Постоянные клиенты */
 .clients-list {
@@ -485,17 +513,27 @@ nav .list {
   border-radius: 4px;
 }
 
+.clients a:hover,
+.clients a:focus {
+  border: 1px solid var(--secondary-link-color);
+}
+
+.clients a:hover svg,
+.clients a:focus svg {
+  fill: var(--secondary-link-color);
+}
+
 .clients-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-icon {
+/* .clients-icon {
   fill: var(--icon-color);
-}
+} */
 
-.clients-icon:hover,
+/* .clients-icon:hover,
 .clients-icon:focus {
-  fill: var(--secondary-link-color);
+  fill: var(--secondary-link-color); */
 }
 
 /* Галерея Портфолио */
@@ -653,8 +691,24 @@ nav .list {
 }
 
 .footer-icon {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 20px;
   height: 20px;
   fill: var(--prime-icon-bgc);
+}
+
+.secondary-container-footer a {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-icon-bgc);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.secondary-container-footer a:hover,
+.secondary-container-footer a:focus {
+  background-color: var(--bg-button-color);
 }
