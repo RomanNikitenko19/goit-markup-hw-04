@@ -84,8 +84,7 @@ html {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 img {
@@ -96,8 +95,8 @@ img {
 
 svg {
   fill: var(--prime-border-color);
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 /* Шапка */
@@ -146,8 +145,8 @@ nav .list {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-} 
- /*?*/
+}
+/*?*/
 .auth-nav .item svg:last-child {
   width: 16px;
   height: 16px;
@@ -224,7 +223,7 @@ nav .list {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -249,9 +248,10 @@ nav .list {
   /* margin-right: auto; */
   /* outline: 1px solid var(--hero-bgc); */
   background-image: linear-gradient(
-    var(--hero-bg-gradient),
-    var(--hero-bg-gradient)),  /* ??? */
-    url(../images/Hero.jpg);
+      var(--hero-bg-gradient),
+      var(--hero-bg-gradient)
+    ),
+    /* ??? */ url(../images/Hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -301,6 +301,10 @@ nav .list {
 }
 
 /* Наши плюсы */
+.weprossection {
+  padding-bottom: 0;
+}
+
 .container .benefits {
   display: flex;
   flex-wrap: wrap;
@@ -311,7 +315,7 @@ nav .list {
 .benefits-list-item-third,
 .benefits-list-item-fourth {
   width: 270px;
-  height: 120px;
+  /* height: 120px; */
   fill: var(--secondary-link-color);
 }
 
@@ -322,7 +326,7 @@ nav .list {
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
-  background-image: url(../images/antenna\ 1.svg);
+  background-image: url(../images/antenna\1svg);
   background-position: center;
   background-repeat: no-repeat;
   fill: var(--primaty-link-color);
@@ -347,7 +351,7 @@ nav .list {
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
-  background-image: url(../images/diagram\ 1.svg);
+  background-image: url(../images/diagram\1svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -444,7 +448,7 @@ nav .list {
 }
 
 .ourteam-title-padding {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .title-primery {
@@ -457,7 +461,7 @@ nav .list {
 }
 
 .ourteam .text {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -576,7 +580,7 @@ nav .list {
 }
 
 .gallery .button {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   border-radius: 4px;
 
   padding-top: 6px;
