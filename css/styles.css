@@ -21,6 +21,7 @@
   --bg-secondary-title: rgba(47, 48, 58, 0.8);
   --bg-button-color: #2196f3;
   --hero-bgc: #c4c4c4;
+  --hero-bg-gradient: rgba(47, 48, 58, 0.4);
   --prime-button-title: #ffffff;
   --footer-bg-color: #2f303a;
   --footer-text-color: #ffffff;
@@ -142,13 +143,14 @@ nav .list {
 } */
 
 .auth-nav .item svg:first-child {
-  width: 10px;
+  width: 16px;
   height: 16px;
   margin-right: 10px;
-}
+} 
+ /*?*/
 .auth-nav .item svg:last-child {
   width: 16px;
-  height: 11px;
+  height: 16px;
   margin-right: 10px;
 }
 
@@ -247,9 +249,8 @@ nav .list {
   /* margin-right: auto; */
   /* outline: 1px solid var(--hero-bgc); */
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+    var(--hero-bg-gradient),
+    var(--hero-bg-gradient)),  /* ??? */
     url(../images/Hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -471,8 +472,8 @@ nav .list {
 
 .ourteam-container a {
   display: flex;
-  align-content: center;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   background-color: var(--primary-background-color);
@@ -502,8 +503,8 @@ nav .list {
 
 .clients a {
   display: flex;
-  align-content: center;
   align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   border-width: 1px;
@@ -533,8 +534,8 @@ nav .list {
 
 /* .clients-icon:hover,
 .clients-icon:focus {
-  fill: var(--secondary-link-color); */
-}
+  fill: var(--secondary-link-color);
+} */
 
 /* Галерея Портфолио */
 .gallery .list {
@@ -699,8 +700,8 @@ nav .list {
 
 .secondary-container-footer a {
   display: flex;
-  align-content: center;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   background-color: var(--secondary-icon-bgc);
